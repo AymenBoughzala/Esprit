@@ -1,5 +1,6 @@
-package com.zoo.management;
-import java.util.Scanner;
+package tn.esprit.gestionzoo.main;
+import tn.esprit.gestionzoo.entities.*;
+/*import java.util.Scanner; */
 
 
 public class ZooManagement {
@@ -74,7 +75,7 @@ public class ZooManagement {
 	//instruction 11
     myZoo.displayAnimals();
     //instruction 15
-    myZoo.isZooFull (); 
+
     
 	myZoo2.addAnimal(lion);
 	myZoo2.addAnimal(lion2);
@@ -84,8 +85,9 @@ public class ZooManagement {
 	
 	myZoo.comparerZoo ( myZoo2,myZoo);
 	
+
     
-   
+	
     
 	}
 }
