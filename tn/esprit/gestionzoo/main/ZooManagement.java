@@ -6,7 +6,7 @@ import tn.esprit.gestionzoo.entities.*;
 public class ZooManagement {
 
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ZooFullException , InvalidAgeException {
 		
 	/*   Scanner sc   = new Scanner (System.in);
 		System.out.println (" entrez le nombre de cages");
@@ -37,7 +37,7 @@ public class ZooManagement {
 	// création des annimaux avec le constructeur parametré // 
 	
     Animal lion = new Animal ("cats", "Alex", 2 , false);
-    Animal Zebra = new Animal ("horse" , "Marty" , 1 , true );
+    Animal Zebra = new Animal ("horse" , "Marty" , -1 , true );
     Animal Girafe = new Animal ("Girafe" , " Melman ", 3, true);
     Animal Monkey = new Animal ("monkeys" , " Jack ", 4, true);
     Animal lion2 = new Animal ("cats", "Alexa", 6 , false);
@@ -67,7 +67,7 @@ public class ZooManagement {
 	myZoo.addAnimal(lion2);
 	myZoo.addAnimal(Zebra);
 	myZoo.addAnimal(Girafe);
-	myZoo.addAnimal(Monkey);
+
 	
 	System.out.println(myZoo.searchAnimal(lion2));
 	System.out.println(myZoo.removeAnimal(Girafe));
