@@ -1,6 +1,7 @@
 package tn.esprit.gestionzoo.entities;
+import tn.esprit.gestionzoo.interfaces.Carnivore;
 
-public non-sealed class Aquatic extends Animal {
+public non-sealed class Aquatic extends Animal implements Carnivore<Food> {
 
     protected String habitat;
     
@@ -37,6 +38,10 @@ public non-sealed class Aquatic extends Animal {
         return false;
     }
 
-    
+	@Override
+	public void eatMeat(Food meat) {
+		
+		
+	}
    
 }

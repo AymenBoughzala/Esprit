@@ -1,7 +1,6 @@
 package tn.esprit.gestionzoo.main;
 import tn.esprit.gestionzoo.entities.*;
-/*import java.util.Scanner; */
-
+import tn.esprit.gestionzoo.exceptions.*;
 
 public class ZooManagement {
 

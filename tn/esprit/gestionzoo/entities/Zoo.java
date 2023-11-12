@@ -1,4 +1,8 @@
+
 package tn.esprit.gestionzoo.entities;
+
+import tn.esprit.gestionzoo.exceptions.InvalidAgeException;
+import tn.esprit.gestionzoo.exceptions.ZooFullException;
 
 public class Zoo {
 	private Animal[] animals;
@@ -163,8 +167,7 @@ public class Zoo {
 	    public float maxPenguinSwimmingDepth(){
 	        float maxDepth =0;
 	        for (int i=0;i<aquaticAnimalCount;i++){
-	            if(aquaticAnimals[i] instanceof Penguin ){
-	                Penguin p = (Penguin) aquaticAnimals[i];
+	            if(aquaticAnimals[i] instanceof Penguin p ){
 	                if(maxDepth< p.getSwimmingDepth());
 	                maxDepth = p.getSwimmingDepth();
 	            }
