@@ -9,11 +9,10 @@ public class Employe implements Comparable<Employe> {
 	private String prenom;
 	private String nom_departement;
 	private int grade;
-
-	public Employe () {
-		
+	
+	public Employe () {	
 	}
-
+	
 	public Employe(int id, String nom, String prenom, String nom_departement, int grade) {
 		super();
 		this.id = id;
@@ -90,8 +89,5 @@ public class Employe implements Comparable<Employe> {
 	public int compareTo(Employe o) {
 		 return Integer.compare(this.getId(), o.getId());
 	}
-	
-	
-	
 
 }
